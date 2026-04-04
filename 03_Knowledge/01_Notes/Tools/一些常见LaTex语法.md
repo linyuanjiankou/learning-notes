@@ -29,8 +29,32 @@
 
 直接使用反斜杠加字母名称。
 
-- 小写示例：`\alpha`, `\beta`, `\pi` 渲染为 α , β , π
-- 大写示例：`\Gamma`, `\Delta`, `\Omega` 渲染为 Γ , Δ , Ω
+| 英文名称        | 小写符号  | 小写代码                       | 大写符号 | 大写代码         |
+| ----------- | ----- | -------------------------- | ---- | ------------ |
+| **Alpha**   | α     | `\alpha`                   | A    | `A` (直接用英文A) |
+| **Beta**    | β     | `\beta`                    | B    | `B`          |
+| **Gamma**   | γ     | `\gamma`                   | Γ    | `\Gamma`     |
+| **Delta**   | δ     | `\delta`                   | Δ    | `\Delta`     |
+| **Epsilon** | ε / ϵ | `\varepsilon` / `\epsilon` | E    | `E`          |
+| **Zeta**    | ζ     | `\zeta`                    | Z    | `Z`          |
+| **Eta**     | η     | `\eta`                     | H    | `H`          |
+| **Theta**   | θ / ϑ | `\theta` / `\vartheta`     | Θ    | `\Theta`     |
+| **Iota**    | ι     | `\iota`                    | I    | `I`          |
+| **Kappa**   | κ / ϰ | `\kappa` / `\varkappa`     | K    | `K`          |
+| **Lambda**  | λ     | `\lambda`                  | Λ    | `\Lambda`    |
+| **Mu**      | μ     | `\mu`                      | M    | `M`          |
+| **Nu**      | ν     | `\nu`                      | N    | `N`          |
+| **Xi**      | ξ     | `\xi`                      | Ξ    | `\Xi`        |
+| **Omicron** | ο     | `o` (直接用英文o)               | O    | `O`          |
+| **Pi**      | π / ϖ | `\pi` / `\varpi`           | Π    | `\Pi`        |
+| **Rho**     | ρ / ϱ | `\rho` / `\varrho`         | P    | `P`          |
+| **Sigma**   | σ / ς | `\sigma` / `\varsigma`     | Σ    | `\Sigma`     |
+| **Tau**     | τ     | `\tau`                     | T    | `T`          |
+| **Upsilon** | υ     | `\upsilon`                 | Υ    | `\Upsilon`   |
+| **Phi**     | φ / ϕ | `\varphi` / `\phi`         | Φ    | `\Phi`       |
+| **Chi**     | χ     | `\chi`                     | X    | `X`          |
+| **Psi**     | ψ     | `\psi`                     | Ψ    | `\Psi`       |
+| **Omega**   | ω     | `\omega`                   | Ω    | `\Omega`     |
 
 #### 求和与积分
 
@@ -58,4 +82,11 @@
 **角度符号 (°)**：使用 `^\circ`
 **角度符号 (∠)**：使用 `\angle`
 
-
+#### 换行等于
+```LaTex
+\begin{align}
+  f(x) &= (x+1)^2 + 2x \nonumber \\  % \nonumber 表示该行不编号
+       &= x^2 + 2x + 1 + 2x \nonumber \\
+       &= x^2 + 4x + 1
+\end{align}
+```
