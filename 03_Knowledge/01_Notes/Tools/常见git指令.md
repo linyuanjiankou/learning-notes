@@ -5,6 +5,9 @@
 * 提交到本地仓库：`git commit -m "提交说明"`
 * 查看提交历史：`git log`
 * 删除远程仓库中的文件夹，保留本地：git rm -r <文件夹名称>
+* 连接到远程仓库：`git remote add origin git@github.com:username/reponame.git`
+* 拉取远程仓库和本地仓库合并：`git pull --rebase origin main`
+
 
 
 # 常见提交英文
