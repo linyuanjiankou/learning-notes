@@ -7,6 +7,7 @@
 * 删除远程仓库中的文件夹，保留本地：git rm -r <文件夹名称>
 * 连接到远程仓库：`git remote add origin git@github.com:username/reponame.git`
 * 拉取远程仓库和本地仓库合并：`git pull --rebase origin main`
+* 修改最近一次提交的提交信息：`git commit --ammend`
 
 
 
