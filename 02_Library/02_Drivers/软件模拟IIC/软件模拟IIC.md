@@ -1,4 +1,7 @@
-# 整合后的代码：
+# 整合后的代码（未引入仲裁机制等 ，一主机一从机）：
+
+*（见附件）*
+
 # 学习经过：
 # 一、SCL&SDA
 * SCL：主机控制，节拍器（usually 100kHz or 400kHz）；SDA：主从机轮流使用
@@ -136,7 +139,6 @@ uint8_t IIC_ReadByte(uint8_t ack)
     return data;
 }
 ```
-# 六、读MPU6050的只读寄存器
 
 
 

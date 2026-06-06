@@ -1,4 +1,4 @@
-```c
+#include "delay.h"
 #include <stdint.h>
 
 static uint32_t fac_us = 0;
@@ -81,4 +81,3 @@ void Delay_ms(uint32_t nms) {
 
     Delay_us(nms * 1000);
 }
-```
