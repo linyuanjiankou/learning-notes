@@ -1,5 +1,5 @@
 # 背景
-当我在Github上找到一个项目，用于即使更正命令行命令的项目，下载试运行的时候出现了问题，这个项目需要在python旧版本的环境下才能运行。
+当我在Github上找到一个项目，用于及时更正命令行命令的项目，下载试运行的时候出现了问题，这个项目需要在python旧版本的环境下才能运行。
 由于我正处于假期，时间还算比较充裕，于是决定研究一下配置miniconda进行环境隔离。
 # 日常工作流
 日常配置虚拟环境的流程大体上分为三步：
@@ -24,10 +24,14 @@ conda install numpy
 ```bash
 pip install requests
 ```
-# 其他命令总览
-- 查看环境实际安装位置：`conda info --envs`
-- 临时指定安装路径：`conda create -p <完整路径/环境名> python=3.9`；同时，激活时也需要完整路径：`conda activate <完整路径/环境名>`
-- 从当前环境返回：`conda deactivate`
 # 配合PyCharm
 由于我之前使用官方Python+PyCharm的组合进行编程，现在多写一点有关miniconda+PyCharm的配置关联：
 在PyCharm中，在设置`Settings -> Python Interpreter`中，点击齿轮图标`Add...`，选择`Conda Environment`，然后选择环境即可。
+# 命令总览
+- 创建新环境：`conda create -n 环境名称 python=x.x`
+- 激活环境：`conda activate 环境名称`
+- 安装包：`conda install 包名称`
+- 查看环境实际安装位置：`conda info --envs`
+- 临时指定安装路径：`conda create -p <完整路径/环境名> python=3.9`；同时，激活时也需要完整路径：`conda activate <完整路径/环境名>`
+- 从当前环境返回：`conda deactivate`
+- 查看已经创建的环境：`conda env list` / `conda info --envs`
