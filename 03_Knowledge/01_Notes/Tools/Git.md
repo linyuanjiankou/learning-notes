@@ -8,6 +8,7 @@
 * 连接到远程仓库：`git remote add origin git@github.com:username/reponame.git`
 * 拉取远程仓库和本地仓库合并：`git pull --rebase origin main`
 * 修改最近一次提交的提交信息：`git commit --ammend`
+* 修改文件夹路径：`git mv 原文件夹路径 目标文件夹路径/`
 
 
 
