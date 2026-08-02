@@ -28,10 +28,16 @@ pip install requests
 由于我之前使用官方Python+PyCharm的组合进行编程，现在多写一点有关miniconda+PyCharm的配置关联：
 在PyCharm中，在设置`Settings -> Python Interpreter`中，点击齿轮图标`Add...`，选择`Conda Environment`，然后选择环境即可。
 # 命令总览
-- 创建新环境：`conda create -n 环境名称 python=x.x`
-- 激活环境：`conda activate 环境名称`
-- 安装包：`conda install 包名称`
+- 创建新环境：`conda create -n <name> python=x.x`
+- 删除名为`<name>`的环境：`conda remove -n <name> --all`
+- 激活环境：`conda activate <name>`
+- 安装包：`conda install <name>`
 - 查看环境实际安装位置：`conda info --envs`
 - 临时指定安装路径：`conda create -p <完整路径/环境名> python=3.9`；同时，激活时也需要完整路径：`conda activate <完整路径/环境名>`
-- 从当前环境返回：`conda deactivate`
+- 退出当前环境：`conda deactivate`
 - 查看已经创建的环境：`conda env list` / `conda info --envs`
+- 查看当前环境的Python版本：`python --version`
+- 列举当前环境安装的所有包：`pip list`
+- 为当前环境安装名为`<package>`的包，包的版本为x.xx：`pip install <package>==x.xx`
+- 查看当前环境中`<package>`这个包的信息：`pip show <package>`
+- 为当前环境卸载名为`<package>`的包：`pip uninstall <package>`
